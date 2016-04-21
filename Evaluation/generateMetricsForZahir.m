@@ -1,4 +1,4 @@
-folder = '../Jenna_Logs/';
+folder = '../zaza_Logs/';
 dirInfo = dir(folder);
 for i =1:numel(dirInfo)
     if(isempty(strfind(dirInfo(i).name, '.txt')))
@@ -12,6 +12,6 @@ for i =1:numel(dirInfo)
     end
     fileAndPath = [folder dirInfo(i).name];
     temp = strsplit(dirInfo(i).name, '.');
-    outputName = ['flickr' temp{1} '.mat'];
+    outputName = ['googLeNet' temp{1} '.mat'];
     calculateMetrics(fileAndPath, gt, outputName);
 end
