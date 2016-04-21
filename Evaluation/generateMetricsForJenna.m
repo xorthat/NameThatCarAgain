@@ -12,6 +12,6 @@ for i =1:numel(dirInfo)
     end
     fileAndPath = [folder dirInfo(i).name];
     temp = strsplit(dirInfo(i).name, '.');
-    outputName = ['flickr' temp{1} '.mat'];
+    outputName = ['flickr' temp{1:end-1} '.mat'];
     calculateMetrics(fileAndPath, gt, outputName);
 end
