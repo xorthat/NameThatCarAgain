@@ -13,8 +13,8 @@ while ischar(logLine) && size(logLine, 2) > 1
     total = total + 1;
     gtVect = strsplit(gtLine);
     logVect = strsplit(logLine);
-    actual = int8(str2double(gtVect{2}));
-    predicted = int8(str2double(logVect{2}));
+    actual = int8(str2double(gtVect{2})) + 1;
+    predicted = int8(str2double(logVect{2})) + 1;
     if(actual == predicted)
         fAccuracy(actual) = fAccuracy(actual) + 1;
         accuracy = accuracy + 1;
@@ -26,7 +26,7 @@ while ischar(logLine) && size(logLine, 2) > 1
 end
 fAccuracy = fAccuracy ./ count;
 accuracy = accuracy / total;
-save(outputFileName,'confusionMatrix');
+save(outputFileName);
 fclose(fidLog);
 fclose(fidGT);
 end
