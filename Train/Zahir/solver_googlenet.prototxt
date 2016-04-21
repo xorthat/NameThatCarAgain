@@ -14,7 +14,7 @@ momentum: 0.9
 weight_decay: 0.0002 	
 display: 20
 
-snapshot: 5000
+snapshot: 15000
 snapshot_prefix: "googlenet_finetune_web_car"
 
 random_seed: 34234562302122                 

@@ -7,8 +7,8 @@ layers {
   name: "data"
   type: IMAGE_DATA
   image_data_param {
-    root_folder: "/scratch/sbokhari/train-set/256/0/"
-    source: "/scratch/sbokhari/train-set/256/0/labels.txt"
+    root_folder: "/scratch/sbokhari/train-set/256/0.05/"
+    source: "/scratch/sbokhari/labels_train.txt"
     batch_size: 50
     shuffle: true
     new_width: 256
@@ -31,8 +31,8 @@ layers {
   name: "data"
   type: IMAGE_DATA
   image_data_param {
-    root_folder: "/scratch/sbokhari/test-set/256/0/"
-    source: "/scratch/sbokhari/test-set/256/0/labels.txt"
+    root_folder: "/scratch/sbokhari/test-set/256/0.05/"
+    source: "/scratch/sbokhari/labels_test.txt"
     batch_size: 10
     new_width: 256
     new_height: 256

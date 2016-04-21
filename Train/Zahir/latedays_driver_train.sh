@@ -14,7 +14,7 @@ fi
 OUTPUT_FILER=/home/${USER}/STOutputs/python.${PROCSTRING}.${HOSTNAME}.$$.output
 echo ${OUTPUT_FILER}
 touch ${OUTPUT_FILER}
-cd /home/${USER}/NameThatCar/Train
+cd /home/${USER}/NameThatCarAgain/Train/Zahir
 
 echo $$
 nice python  "${PROCSTRING}" &> $OUTPUT_FILER

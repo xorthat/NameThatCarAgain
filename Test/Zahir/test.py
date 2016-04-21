@@ -49,10 +49,10 @@ def findAccuracy(result_file, model, test_listfile, prototxt):
   print accuracy
   return accuracy
 
-acc30Test = findAccuracy('30results_256_0.txt','/home/sbokhari/NameThatCarAgain/Train/Zahir/googlenet_finetune_web_car_iter_30000.caffemodel', '/scratch/sbokhari/test-set/256/0/labels.txt', '/home/sbokhari/NameThatCarAgain/Test/Zahir/test.prototxt')
-acc30New = findAccuracy('30results_256_0_new.txt','/home/sbokhari/NameThatCarAgain/Train/Zahir/googlenet_finetune_web_car_iter_30000.caffemodel','/scratch/sbokhari/new-set/256/0/labels.txt', '/home/sbokhari/NameThatCarAgain/Test/Zahir/new_test.prototxt')
-acc15Test = findAccuracy('15results_256_0.txt','/home/sbokhari/NameThatCarAgain/Train/Zahir/googlenet_finetune_web_car_iter_15000.caffemodel', '/scratch/sbokhari/test-set/256/0/labels.txt', '/home/sbokhari/NameThatCarAgain/Test/Zahir/test.prototxt')
-acc15New = findAccuracy('15results_256_0_new.txt','/home/sbokhari/NameThatCarAgain/Train/Zahir/googlenet_finetune_web_car_iter_15000.caffemodel', '/scratch/sbokhari/new-set/256/0/labels.txt', '/home/sbokhari/NameThatCarAgain/Test/Zahir/new_test.prototxt')
+acc30Test = findAccuracy('30results_256_0.txt','/home/sbokhari/NameThatCarAgain/Train/Zahir/googlenet_finetune_web_car_iter_30000.caffemodel', '/scratch/sbokhari/labels_test.txt', '/home/sbokhari/NameThatCarAgain/Test/Zahir/test.prototxt')
+acc30New = findAccuracy('30results_256_0_new.txt','/home/sbokhari/NameThatCarAgain/Train/Zahir/googlenet_finetune_web_car_iter_30000.caffemodel','/scratch/sbokhari/labels_new.txt', '/home/sbokhari/NameThatCarAgain/Test/Zahir/new_test.prototxt')
+acc15Test = findAccuracy('15results_256_0.txt','/home/sbokhari/NameThatCarAgain/Train/Zahir/googlenet_finetune_web_car_iter_15000.caffemodel', '/scratch/sbokhari/labels_test.txt', '/home/sbokhari/NameThatCarAgain/Test/Zahir/test.prototxt')
+acc15New = findAccuracy('15results_256_0_new.txt','/home/sbokhari/NameThatCarAgain/Train/Zahir/googlenet_finetune_web_car_iter_15000.caffemodel', '/scratch/sbokhari/labels_new.txt', '/home/sbokhari/NameThatCarAgain/Test/Zahir/new_test.prototxt')
 
   
 print '===The results==='
