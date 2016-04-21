@@ -1,4 +1,4 @@
-folder = '../zaza_Logs/';
+folder = '../zaza_logs/';
 dirInfo = dir(folder);
 for i =1:numel(dirInfo)
     if(isempty(strfind(dirInfo(i).name, '.txt')))
